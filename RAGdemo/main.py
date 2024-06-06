@@ -1,5 +1,5 @@
-from langchainRAG.chainapi import run_chain_model
-from langchainRAG.chatapi import run_chat_model
+from chainapi import run_chain_model
+from chatapi import run_chat_model
 from threading import Thread
 
 
