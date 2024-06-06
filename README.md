@@ -1,5 +1,11 @@
 # RAG-ChromeExtention-Demo
 在腾讯mini学习环节中制作的浏览器插件与本地知识库大模型的demo
+## 浏览器插件所用技术栈
+* vue3+vite+crxjs 构建工程化目录
+* element-plus+sass 样式构建
+* 使用异步对chrome storage进行数据库的存取，来做聊天记录的持久化
+* 
+
 ## 展示图片
 ### 添加知识库
 ![knowledge](https://github.com/zopeplone/RAG-ChromeExtention-Demo/assets/115687693/015fb7d7-7c29-4b32-98cc-8916beb36943)
