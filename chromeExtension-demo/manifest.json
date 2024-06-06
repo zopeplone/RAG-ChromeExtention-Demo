@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "My First Chrome Extension",
+  "version": "1.0",
+  "description": "This is my first Chrome Extension",
+  "icons": {
+    "77": "AI.png"
+  },
+  "action": {
+    "default_icon": "AI.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/content/content.js"
+      ],
+      "matches":["https://*/*","http://*/*"]
+    }
+  ],
+  "permissions": [
+    "activeTab","storage"
+  ]
+}
