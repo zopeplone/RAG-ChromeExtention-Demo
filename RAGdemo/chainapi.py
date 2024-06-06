@@ -12,7 +12,7 @@ import os
 from fastapi.middleware.cors import CORSMiddleware
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.generation.utils import GenerationConfig
-from langchainRAG.llm_class import MyQwen
+from llm_class import MyQwen
 
 
 
