@@ -1,0 +1,2 @@
+# RAG-ChromeExtention-Demo
+在腾讯mini学习环节中制作的浏览器插件与本地知识库大模型的demo
