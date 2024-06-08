@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "My First Chrome Extension",
+  "version": "1.0",
+  "description": "This is my first Chrome Extension",
+  "icons": {
+    "77": "AI.png"
+  },
+  "action": {
+    "default_icon": "AI.png",
+    "default_title":"点击图标打开侧边栏"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "src/content/content.js",
+        "src/assets/umd.min.js"
+      ],
+      "matches":["https://*/*","http://*/*"]
+    }
+  ],
+  "side_panel": {
+    "default_path": "index.html",
+    "openPanelOnActionClick": true
+  },
+  "permissions": [
+    "activeTab","storage","tabs","sidePanel","action"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
